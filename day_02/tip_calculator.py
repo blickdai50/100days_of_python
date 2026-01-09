@@ -12,4 +12,4 @@ people = int(people)
 pay =bill * tip / people
 pay = round(pay, 2)
 
-print("Each person should pay: $" + str(pay))
+print(f"Each person should pay: $  {str(pay)}")
