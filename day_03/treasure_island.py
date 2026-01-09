@@ -1,4 +1,4 @@
-print('''
+print(r'''
        ________________________________________________________
 /  ____________________________________________________  \
 | |<_> <_> <_> <_> <_> <_> <_> <_> <_> <_> <_> <_> <_> | |
@@ -18,14 +18,14 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure")
 
 print("You're at a cross road. Where do you want to go?")
-choice1 = input("    Type \"left\" or \"right\"\n")
+choice1 = input("    Type \"left\" or \"right\"\n").lower()
 
 if choice1 == "left":
     print("You've come to a lake. There is an island in the middle of the lake")
-    choice2 = input("    Type \"wait\" to wait for a boat. Type \"swim\" to swim across.\n")
+    choice2 = input("    Type \"wait\" to wait for a boat. Type \"swim\" to swim across.\n").lower()
     if choice2 == "wait":
         print("You've come to a castle. There are three doors in the castle")
-        choice3 = input("    Type \"red\" to open the red door, \"yellow\" for the yellow one, \"blue\" for the blue one .\n")
+        choice3 = input("    Type \"red\" to open the red door, \"yellow\" for the yellow one, \"blue\" for the blue one .\n").lower()
         if choice3 == "red":
             print("Burned by fire.")
             print("Game Over.")
